@@ -481,6 +481,12 @@
     document.getElementById('cookie-consent-banner').style.display = 'none';
     // Set a cookie to remember the user's consent
     document.cookie = "cookie_consent=true; path=/; max-age=" + 60*60*24*365;
+
+    // Update Google Consent Mode
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    });
   };
 
   // Check if the user has already accepted cookies
@@ -497,11 +503,5 @@
     'ad_storage': 'denied',
     'analytics_storage': 'denied'
   });
-
-  document.getElementById('accept-cookies').onclick = function() {
-    gtag('consent', 'update', {
-      'ad_storage': 'granted',
-      'analytics_storage': 'granted'
-    });
-  };
+</script>
 </script>
