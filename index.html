@@ -469,7 +469,39 @@
 
     gtag('config', 'G-1DMHG1DQNY');
   </script>
+<!--Consent-->
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner" style="position: fixed; bottom: 0; width: 100%; background: #000; color: #fff; padding: 10px; text-align: center; z-index: 1000;">
+  We use cookies to improve your experience on our site. By using our site, you consent to cookies. 
+  <button id="accept-cookies" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer;">Accept</button>
+</div>
 
-    
-  </body>
-</html>
+<script>
+  document.getElementById('accept-cookies').onclick = function() {
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+    // Set a cookie to remember the user's consent
+    document.cookie = "cookie_consent=true; path=/; max-age=" + 60*60*24*365;
+  };
+
+  // Check if the user has already accepted cookies
+  if (document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='))) {
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+  }
+</script>
+
+<!-- Google Consent Mode -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  document.getElementById('accept-cookies').onclick = function() {
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    });
+  };
+</script>
