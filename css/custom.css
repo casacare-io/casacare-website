@@ -1,78 +1,36 @@
-< !DOCTYPE html><html lang="en"><head><title>CasaCare &mdash;
-Website by Colorlib</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet"><link rel="stylesheet" href="fonts/icomoon/style.css"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/jquery-ui.css"><link rel="stylesheet" href="css/owl.carousel.min.css"><link rel="stylesheet" href="css/owl.theme.default.min.css"><link rel="stylesheet" href="css/jquery.fancybox.min.css"><link rel="stylesheet" href="css/bootstrap-datepicker.css"><link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"><link rel="stylesheet" href="css/aos.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/custom.css">< !-- Link to custom CSS file --></head><body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"><div class="site-wrap">< !-- Rest of your HTML content --><header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner"><div class="container-fluid"><div class="d-flex align-items-center"><div class="site-logo"><a href="index.html">CasaCare</a></div><div><nav class="site-navigation position-relative text-right" role="navigation"><ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"><li><a href="#home-section" class="nav-link">Home</a></li><li><a href="#work-section" class="nav-link">Work</a></li><li><a href="#process-section" class="nav-link">Process</a></li><li><a href="#services-section" class="nav-link">Services</a></li></ul></nav></div><div class="ml-auto"><nav class="site-navigation position-relative text-right" role="navigation"><ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block"><li class="cta"><a href="#contact-section" class="nav-link"><span class="rounded border border-primary">Contact</span></a></li></ul></nav><a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div><div class="language-switcher"><button class="lang-btn" onclick="setLanguage('en')">English</button><button class="lang-btn" onclick="setLanguage('fr')">Français</button></div></div></div></header>< !-- Rest of your HTML content --></div>< !-- .site-wrap --><script src="js/jquery-3.3.1.min.js"></script><script src="js/jquery-migrate-3.0.1.min.js"></script><script src="js/jquery-ui.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.stellar.min.js"></script><script src="js/jquery.countdown.min.js"></script><script src="js/bootstrap-datepicker.min.js"></script><script src="js/jquery.easing.1.3.js"></script><script src="js/aos.js"></script><script src="js/jquery.fancybox.min.js"></script><script src="js/jquery.sticky.js"></script><script src="js/main.js"></script>< !-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-1DMHG1DQNY"></script><script>window.dataLayer=window.dataLayer || [];
-
-function gtag() {
-  dataLayer.push(arguments);
+/* custom.css */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
-gtag('js', new Date());
-
-gtag('config', 'G-1DMHG1DQNY');
-
-</script>< !-- Consent Scripts --><div id="cookie-consent-banner" style="position: fixed; bottom: 0; width: 100%; background: #000; color: #fff; padding: 10px; text-align: center; z-index: 1000;">We use cookies to improve your experience on our site. By using our site,
-you consent to cookies. <button id="accept-cookies" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer;">Accept</button></div><script>document.getElementById('accept-cookies').onclick=function() {
-  document.getElementById('cookie-consent-banner').style.display='none';
-  document.cookie="cookie_consent=true; path=/; max-age="+60*60*24*365;
-
-  gtag('consent', 'update', {
-    'ad_storage': 'granted',
-    'analytics_storage': 'granted'
-  });
+.lang-btn {
+  background: #007aff;
+  /* Apple blue color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-;
-
-if (document.cookie.split(';').some((item)=> item.trim().startsWith ('cookie_consent='))) {
-  document.getElementById('cookie-consent-banner').style.display='none';
+.lang-btn:hover {
+  background: #005bb5;
+  /* Darker blue for hover effect */
+  transform: translateY(-2px);
 }
 
-</script><script>window.dataLayer=window.dataLayer || [];
-
-function gtag() {
-  dataLayer.push(arguments);
+.lang-btn:focus {
+  outline: none;
 }
 
-gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'analytics_storage': 'denied'
-});
-
-const content= {
-  en: {
-    welcomeHeading: "Welcome to CasaCare",
-      trustedPartner: "Your trusted partner for high-touch home care services in Quebec",
-      personalizedCare: "We provide personalized care for vacant properties, peace of mind for homeowners, and flexible service packages.",
-      workSubTitle: "Excellent Work",
-      workTitle: "Our Works",
-      workDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.",
-      contactTitle: "Message Us",
-      contactDescription: "Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi."
-  }
-
-  ,
-  fr: {
-    welcomeHeading: "Bienvenue chez CasaCare",
-      trustedPartner: "Votre partenaire de confiance pour les services de soins à domicile de haute qualité au Québec",
-      personalizedCare: "Nous offrons des soins personnalisés pour les propriétés vacantes, la tranquillité d'esprit pour les propriétaires et des forfaits de services flexibles.",
-      workSubTitle: "Travail Excellent",
-      workTitle: "Nos Réalisations",
-      workDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.",
-      contactTitle: "Contactez-Nous",
-      contactDescription: "Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi."
-  }
+.lang-btn:active {
+  background: #003e7e;
+  /* Even darker blue for active effect */
+  transform: translateY(0);
 }
-
-;
-
-function setLanguage(lang) {
-  document.getElementById('welcome-heading').innerText=content[lang].welcomeHeading;
-  document.getElementById('trusted-partner').innerText=content[lang].trustedPartner;
-  document.getElementById('personalized-care').innerText=content[lang].personalizedCare;
-  document.getElementById('work-sub-title').innerText=content[lang].workSubTitle;
-  document.getElementById('work-title').innerText=content[lang].workTitle;
-  document.getElementById('work-description').innerText=content[lang].workDescription;
-  document.getElementById('contact-title').innerText=content[lang].contactTitle;
-  document.getElementById('contact-description').innerText=content[lang].contactDescription;
-}
-
-</script></body></html>
