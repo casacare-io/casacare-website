@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>CasaCare &mdash; Website by Colorlib</title>
   <meta charset="utf-8">
@@ -19,7 +18,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css"> <!-- Link to custom CSS file -->
 </head>
-
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="site-wrap">
     <!-- Rest of your HTML content -->
@@ -41,12 +39,10 @@
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block">
-                <li class="cta"><a href="#contact-section" class="nav-link"><span
-                      class="rounded border border-primary">Contact</span></a></li>
+                <li class="cta"><a href="#contact-section" class="nav-link"><span class="rounded border border-primary">Contact</span></a></li>
               </ul>
             </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
-                class="icon-menu h3"></span></a>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
           </div>
           <div class="language-switcher">
             <button class="lang-btn" onclick="setLanguage('en')">English</button>
@@ -79,24 +75,22 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DMHG1DQNY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-1DMHG1DQNY');
   </script>
 
   <!-- Consent Scripts -->
-  <div id="cookie-consent-banner"
-    style="position: fixed; bottom: 0; width: 100%; background: #000; color: #fff; padding: 10px; text-align: center; z-index: 1000;">
-    We use cookies to improve your experience on our site. By using our site, you consent to cookies.
-    <button id="accept-cookies"
-      style="background: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer;">Accept</button>
+  <div id="cookie-consent-banner" style="position: fixed; bottom: 0; width: 100%; background: #000; color: #fff; padding: 10px; text-align: center; z-index: 1000;">
+    We use cookies to improve your experience on our site. By using our site, you consent to cookies. 
+    <button id="accept-cookies" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer;">Accept</button>
   </div>
 
   <script>
-    document.getElementById('accept-cookies').onclick = function () {
+    document.getElementById('accept-cookies').onclick = function() {
       document.getElementById('cookie-consent-banner').style.display = 'none';
-      document.cookie = "cookie_consent=true; path=/; max-age=" + 60 * 60 * 24 * 365;
+      document.cookie = "cookie_consent=true; path=/; max-age=" + 60*60*24*365;
       gtag('consent', 'update', {
         'ad_storage': 'granted',
         'analytics_storage': 'granted'
@@ -110,7 +104,7 @@
 
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('consent', 'default', {
       'ad_storage': 'denied',
       'analytics_storage': 'denied'
@@ -152,5 +146,4 @@
   </script>
 
 </body>
-
 </html>
