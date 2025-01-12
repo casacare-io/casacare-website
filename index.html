@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+❯ curl --location 'https://platform.orbcomm.com/SynB2BGatewayService/api/generateToken' \
+--header 'Content-Type: application/json' \
+--data "{
+\"orgkey\": \"\",
+\"password\": \"NourTansportAPILoadstopUser\",
+\"userName\": \"LoadStop
+}"
+{"timestamp":"2025-01-10T13:40:20.844+0000","status":500,"error":"Internal Server Error","message":"JSON conversion
+problem: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string
+value; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Illegal unquoted character ((CTRL-CHAR,
+code 10)): has to be escaped using backslash to be included in string value\n at [Source: (PushbackInputStream); line:
+4, column: 19] (through reference chain:
+com.orbc.synergy.synb2bgatewayservice.response.vo.User[\"userName\"])","path":"/SynB2BGatewayService/api/generateToken"}%<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -65,7 +77,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 mr-auto" data-aos="fade-up">
-            <h1 style="margin-bottom: 20px;">Bienvenue chez CasaCare</h1>
+            <h1 style="margin-bottom: 20px;">Bienvenue chez CasaCare!</h1>
             <h2 class="text-white" style="margin-bottom: 20px;">Votre partenaire de confiance pour des services de soins
               à domicile intensifs au Québec</h2>
             <p class="mb-5" style="color: white; margin-bottom: 20px;">Nous offrons des soins personnalisés pour des
