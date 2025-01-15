@@ -320,48 +320,51 @@
       </div>
     </div>
 
-    <div class="site-section" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <h2 class="section-title mb-3">Messagez-nous</h2>
-            <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam
-              temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-            <form method="post" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="Prénom">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Nom">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Sujet">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Courriel">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10"
-                    placeholder="Écrivez votre message ici."></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-6">
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Envoyer le message">
-                </div>
-              </div>
-            </form>
+<div class="site-section" id="contact-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <h2 class="section-title mb-3">Messagez-nous</h2>
+        <p class="mb-5">Pour toute question ou assistance, veuillez nous envoyer un message. Nous sommes là pour vous
+          aider!</p>
+        <form method="POST" action="https://formspree.io/f/your-form-id" data-aos="fade">
+          <!-- Hidden field for Formspree -->
+          <input type="hidden" name="_next" value="thank-you.html">
+          <div class="form-group row">
+            <div class="col-md-6 mb-3 mb-lg-0">
+              <input type="text" class="form-control" name="first_name" placeholder="Prénom">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="last_name" placeholder="Nom">
+            </div>
           </div>
-        </div>
+          <div class="form-group row">
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Sujet">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-12">
+              <input type="email" class="form-control" name="email" placeholder="Courriel">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" id="" cols="30" rows="10"
+                placeholder="Écrivez votre message ici."></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-6">
+              <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Envoyer le message">
+            </div>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
+</div>
+
 
     <footer class="footer-section">
       <div class="container">
